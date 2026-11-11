@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  --color-substrate: #101110;
+  --color-surface: #191b19;
+  --color-surface-active: #202420;
+  --color-hairline: #272b26;
+  --color-laser: #b5e66b;
+  --color-laser-hover: #c8f57e;
+  --color-anodized: #a2a59d;
+  --color-parchment: #f2f1ea;
+  --color-danger: #ffb4ab;
+  --color-danger-border: #93000a;
+}
+
+:root {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  color-scheme: dark;
+  background-color: #101110;
+  color: #f2f1ea;
+}
+
+/* Monospace default for technical data */
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Floorplan silicon wafer subtle grid */
+.silicon-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(39, 43, 38, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(39, 43, 38, 0.4) 1px, transparent 1px);
+}
+
+.silicon-grid-dense {
+  background-size: 12px 12px;
+  background-image: 
+    linear-gradient(to right, rgba(39, 43, 38, 0.6) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(39, 43, 38, 0.6) 1px, transparent 1px);
+}
+
+/* Custom sharp scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101110;
+  border-left: 1px solid #272b26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272b26;
+  border: 1px solid #191b19;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b5e66b;
+}
+
+/* Tabular nums for monospaced timing & data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

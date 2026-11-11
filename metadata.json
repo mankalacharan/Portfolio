@@ -1,0 +1,6 @@
+{
+  "name": "Mankala Charan - VLSI Physical Design Engineer Portfolio",
+  "description": "Portfolio of Mankala Charan, VLSI Physical Design Engineer specializing in RTL-to-GDSII flow, synthesis, STA, floorplanning, placement, CTS, and routing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
